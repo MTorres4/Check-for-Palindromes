@@ -9,6 +9,7 @@ function testPalindrome(testSubject) {
 	{
 		console.log("True"); 
 		alert("True, great choice!");
+		tryAgain();
 //if yes, an alert for true
 	}else {
 		console.log("False");
@@ -28,7 +29,8 @@ function tryAgain() {
 	return;
       break;
     default:
-      app(people);
+      alert("Please enter 'yes' or 'no'.");
+	  tryAgain();
       break;
   }
 }
